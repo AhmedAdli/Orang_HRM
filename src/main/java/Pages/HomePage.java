@@ -1,6 +1,5 @@
 package Pages;
 
-import Helpers.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

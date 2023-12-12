@@ -1,10 +1,10 @@
 package Helpers;
 
-import Pages.HomePage;
 import Pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
@@ -20,8 +20,8 @@ public class BaseClass {
         loginPage = new LoginPage(driver);
     }
 
-//    @AfterClass
-//    public void tearDown() {
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
 }

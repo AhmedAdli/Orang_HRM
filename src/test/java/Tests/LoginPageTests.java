@@ -2,11 +2,7 @@ package Tests;
 
 import Helpers.BaseClass;
 import Pages.HomePage;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
@@ -25,7 +21,7 @@ public class LoginPageTests extends BaseClass {
     }
 
     @Test
-    public void loginWithoutCredentials() throws Exception {
+    public void loginWithoutCredentials() {
 
         loginPage.clickLoginButton();
         String actual= loginPage.getErrorMsgs().get(0).getText();
