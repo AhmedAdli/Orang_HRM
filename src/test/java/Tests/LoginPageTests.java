@@ -17,7 +17,7 @@ public class LoginPageTests extends BaseClass {
         loginPage.setPasswordField("admin123");
         HomePage homePage=  loginPage.clickLoginButton();
         String actual = homePage.getHeader();
-        assertEquals(actual, "Dashboard");
+        assertEquals(actual, "Dashboard/");
     }
 
     @Test
