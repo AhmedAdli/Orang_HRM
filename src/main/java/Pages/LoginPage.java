@@ -40,8 +40,7 @@ public class LoginPage {
     }
 
     public List<WebElement> getErrorMsgs() {
-        List<WebElement> Msgs = driver.findElements(validationMsg);
-        return Msgs;
+        return driver.findElements(validationMsg);
     }
 
 

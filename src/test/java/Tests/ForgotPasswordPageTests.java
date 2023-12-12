@@ -14,6 +14,6 @@ public class ForgotPasswordPageTests extends BaseClass {
         forgotPasswordPage.setUserNameField("Admin");
         ResetLinkSentPage resetLinkSentPage = forgotPasswordPage.clickResetPasswordButton();
         String actual = resetLinkSentPage.resetLinkSent();
-        assertEquals(actual,"Reset Password link sent successfully ");
+        assertEquals(actual,"Reset Password link sent successfully");
     }
 }
