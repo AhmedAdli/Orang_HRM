@@ -3,15 +3,14 @@ package Helpers;
 import Pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
 public class BaseClass {
-    private WebDriver driver;
+    public static WebDriver driver;
     protected LoginPage loginPage;
-    @BeforeClass
+    @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -20,7 +19,7 @@ public class BaseClass {
         loginPage = new LoginPage(driver);
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
